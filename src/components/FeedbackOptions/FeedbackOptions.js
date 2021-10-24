@@ -5,7 +5,7 @@ function FeedbackOptions({ options, onFeedbackBtnClick }) {
     <div>
       {options.map((el) => {
         return (
-          <button key={el} type="button" onClick={onFeedbackBtnClick(el)}>
+          <button key={el} type="button" onClick={() => onFeedbackBtnClick(el)}>
             {el}
           </button>
         );
